@@ -1,0 +1,537 @@
+* {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #051622cc;
+  overflow-x: hidden;
+  top: -150px;
+}
+
+html::-webkit-scrollbar {
+  border-radius: 0%;
+}
+
+html::-webkit-scrollbar-track {
+  background: #051622;
+  border-radius: 20px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #1ba098;
+  transition: ease 0.2s;
+  border-radius: 20px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #11726b;
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  display: flex;
+  width: 96%;
+  background-color: #1ba098;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 2.7%;
+  top: 0px;
+}
+
+#header .header-kiri .logo-inti {
+  position: relative;
+}
+
+#header .header-tengah a {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.4rem;
+  margin: 0 0.8rem;
+  transition: all 0.1s ease;
+}
+a.home:hover,
+a.genre:hover,
+a.list:hover {
+  background-color: #ff6a3dd6;
+  padding-inline: 20px;
+  padding-block: 7px;
+  border-radius: 10px;
+}
+
+#header .header-kanan .menu {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  left: 230px;
+  color: #000;
+  transition: all 0.1s ease;
+}
+
+#header .header-kanan .menu:hover {
+  position: relative;
+  width: 71px;
+  height: 71px;
+}
+
+#header .header-kanan .search-button {
+  background-color: #ff6a3dd6;
+  color: #000;
+  border-radius: 10px;
+  padding: 13px;
+  top: -30px;
+  right: 140px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#header .header-kanan .search-button::placeholder {
+  color: #000;
+}
+
+#header .header-kanan .search-icon {
+  width: 34px;
+  height: 34px;
+  top: -17.5px;
+  right: 360px;
+}
+/* HEADER END */
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  width: 330px;
+  height: 870px;
+  top: 207px;
+  right: -330px;
+  background: #ff6a3d;
+  transition: 0.4s;
+}
+
+#sidebar.active {
+  position: fixed;
+  width: 330px;
+  height: 870px;
+  top: 207px;
+  right: 0px;
+  background: #ff6a3d;
+}
+
+h1.toolbar {
+  position: relative;
+  font-weight: 700;
+  top: 23px;
+  right: -97px;
+  font-size: 30px;
+}
+
+#sidebar a {
+  top: 30px;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  margin: 7px;
+}
+
+div.isi-sidebar {
+  text-align: end;
+}
+/* SIDEBAR END */
+
+/* CONTENT */
+#content {
+  position: relative;
+}
+
+.top-movies {
+  top: -60px;
+}
+
+#content .top-movies .judul {
+  position: absolute;
+  width: 526px;
+  height: 48px;
+  color: #ff6a3d;
+  font-weight: 700;
+  font-size: 3rem;
+  top: 255px;
+  left: 60px;
+}
+
+#content .top-movies .icon {
+  position: absolute;
+  width: 130px;
+  height: -2px;
+  left: 60px;
+  top: 315px;
+
+  border: 5px dashed #000000;
+  border-radius: 5px;
+}
+
+#content .top-movies .poster-film {
+  position: absolute;
+  width: 1860px;
+  height: 460px;
+  left: 60px;
+  top: 343px;
+  overflow-x: scroll;
+}
+
+#content .top-movies .poster-film:hover > :not(:hover) {
+  opacity: 0.3;
+}
+
+.poster-film::-webkit-scrollbar {
+  width: 10px;
+}
+
+.poster-film::-webkit-scrollbar-thumb {
+  background-color: #1ba097;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.poster-film::-webkit-scrollbar-track {
+  background-color: #051622;
+  border-radius: 10px;
+}
+
+.poster-film a {
+  font-size: 50px;
+  top: 30px;
+  color: #1ba097;
+  opacity: 0;
+}
+
+/* .poster-film a:nth-child(1) {
+}
+.poster-film a:nth-child(2) {
+}
+.poster-film a:nth-child(3) {
+}
+.poster-film a:nth-child(4) {
+}
+.poster-film a:nth-child(5) {
+}
+.poster-film a:nth-child(6) {
+}
+.poster-film a:nth-child(7) {
+}
+.poster-film a:nth-child(8) {
+}
+.poster-film a:nth-child(9) {
+}
+.poster-film a:nth-child(10) {
+} */
+
+.top-movies .the-batman {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 0px;
+}
+
+.top-movies .top-gun {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 326px;
+}
+
+.top-movies .avatar-2 {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 652px;
+}
+
+.top-movies .ambulance {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 989px;
+}
+
+.top-movies .pengabdi-setan-2 {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 1315px;
+}
+.top-movies .black-panther-2 {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 1641px;
+}
+.top-movies .interstellar {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 1969px;
+}
+.top-movies .inception {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 2289px;
+}
+.top-movies .joker {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  left: 2610px;
+}
+.top-movies .the-dark-knight {
+  position: absolute;
+  top: 0px;
+  transition: 2s;
+  left: 2930px;
+}
+
+.top-genre .judul {
+  position: absolute;
+  font-size: 3rem;
+  left: 60px;
+  top: 830px;
+  color: #ff6a3d;
+}
+
+span.genre {
+  font-size: 3rem;
+  left: 60px;
+  top: 780px;
+}
+
+.top-genre a {
+  color: #000;
+  top: 130px;
+  background-color: #ff6a3d;
+  padding: 15px 100px;
+  border-radius: 20px;
+}
+
+.top-genre a:nth-child(1) {
+  left: 10px;
+}
+
+.top-genre a:nth-child(2) {
+  left: 70px;
+}
+
+.top-genre a:nth-child(3) {
+  left: 140px;
+}
+
+.top-genre a:nth-child(4) {
+  left: 210px;
+}
+/* CONTENT END */
+
+/* FOOTER */
+#footer {
+  /* position: relative; */
+  background-color: #1ba098;
+  text-align: center;
+  top: 1200px;
+  left: 0;
+  width: 100%;
+  padding: 0.6rem 1%;
+}
+.logo-inti-footer {
+  width: 130px;
+  height: 130px;
+  left: -75px;
+}
+.watermark {
+  font-size: 15px;
+  left: 75px;
+  bottom: 7px;
+}
+/* FOOTER END */
+
+/* MEDIA QUERIES */
+@media (max-width: 1600px) {
+  .top-movies {
+    top: -60px;
+  }
+
+  .top-genre a:nth-child(4) {
+    display: none;
+  }
+}
+/* LAPTOP */
+@media (max-width: 1366px) {
+  * {
+    font-size: 82%;
+  }
+  /* HEADER */
+  #header .header-kiri .logo-inti {
+    width: 85%;
+  }
+  #header .header-kanan .menu {
+    width: 55px;
+    height: 55px;
+    left: 200px;
+  }
+  #header .header-kanan .search-button {
+    border-radius: 7px;
+    padding: 9px;
+    top: -21.5px;
+    right: 90px;
+  }
+  #header .header-kanan .search-icon {
+    width: 27px;
+    height: 27px;
+    top: -13px;
+    right: 260px;
+  }
+  /* CONTENT */
+  #content {
+    top: -130px;
+  }
+  #content .top-movies .judul {
+    top: 225px;
+  }
+
+  #content .top-movies .icon {
+    width: 115px;
+    top: 270px;
+    left: 63px;
+    border: 3px dashed #000000;
+    border-radius: 5px;
+  }
+
+  #content .top-movies .poster-film {
+    width: 1306px;
+    height: 400px;
+    top: 300px;
+  }
+
+  .poster-film::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .poster-film::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+  }
+
+  .poster-film::-webkit-scrollbar-track {
+    border-radius: 7px;
+  }
+  .top-movies .the-batman,
+  .top-gun,
+  .avatar-2,
+  .ambulance,
+  .pengabdi-setan-2,
+  .black-panther-2,
+  .interstellar,
+  .inception,
+  .joker,
+  .the-dark-knight {
+    width: 260px;
+    height: 360px;
+  }
+
+  .top-movies .top-gun {
+    left: 250px;
+  }
+  .top-movies .avatar-2 {
+    left: 500px;
+  }
+  .top-movies .ambulance {
+    left: 750px;
+  }
+  .top-movies .pengabdi-setan-2 {
+    left: 1000px;
+  }
+  .top-movies .black-panther-2 {
+    left: 1250px;
+  }
+  .top-movies .interstellar {
+    left: 1500px;
+  }
+  .top-movies .inception {
+    left: 1750px;
+  }
+  .top-movies .joker {
+    left: 2000px;
+  }
+  .top-movies .the-dark-knight {
+    left: 2250px;
+  }
+
+  .top-genre .judul {
+    position: absolute;
+    font-size: 3rem;
+    left: 60px;
+    top: 1000px;
+  }
+
+  span.genre {
+    font-size: 30px;
+    left: 60px;
+    top: 900px;
+    padding: 1.4rem 0.5%;
+  }
+
+  .genre a {
+    display: flex;
+    margin-block: 10px;
+    padding-inline: 20px;
+  }
+  .top-genre a:nth-child(1) {
+    left: 5px;
+  }
+
+  .top-genre a:nth-child(2) {
+    left: 5px;
+  }
+
+  .top-genre a:nth-child(3) {
+    left: 5px;
+  }
+
+  .top-genre a:nth-child(4) {
+    left: 5px;
+    display: block;
+  }
+
+  /* SIDEBAR */
+  #sidebar {
+    top: 169px;
+  }
+  #sidebar.active {
+    position: fixed;
+    width: 300px;
+    height: 870px;
+    top: 169px;
+    right: 0px;
+    background: #ff6a3d;
+  }
+
+  /* FOOTER */
+  #footer {
+    display: none;
+  }
+}
+/* TABLET */
+@media (max-width: 1030px) {
+  #content {
+    top: 200px;
+  }
+  .top-genre {
+    display: none;
+  }
+}
+/* PHONE */
+
+/* MEDIA QUERIES END */

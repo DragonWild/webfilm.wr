@@ -1,0 +1,42 @@
+*
+html {
+  position: relative;
+  width: 1918px;
+  height: 1080px;
+  font-family : 'Josefin-Sans', sans-serif;
+}
+
+html #latar{
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+}
+
+#header {
+  position: fixed;
+  width: 1920px;
+  height: 169px;
+  left: 0px;
+  top: 0px;
+}
+
+  #header .latar {
+    position:absolute;
+    background-color: #1BA098;
+    width: 1920px;
+    height: 169px;
+
+    border-radius: 0px 0px 45px 45px;
+  }
+
+  #header img {
+    position: absolute;
+    left: 61px;
+    top: 7px;
+  }
+
+#content {
+
+}
