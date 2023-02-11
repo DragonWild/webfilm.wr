@@ -69,7 +69,7 @@ a.list:hover {
   position: relative;
   width: 70px;
   height: 70px;
-  left: 230px;
+  /* left: 230px; */
   color: #000;
   transition: all 0.1s ease;
 }
@@ -80,7 +80,7 @@ a.list:hover {
   height: 71px;
 }
 
-#header .header-kanan .search-button {
+#header .search-button-active {
   background-color: #ff6a3dd6;
   color: #000;
   border-radius: 10px;
@@ -89,6 +89,18 @@ a.list:hover {
   right: 140px;
   font-size: 1.2rem;
   text-align: center;
+}
+
+#header .search-button {
+  background-color: #ff6a3dd6;
+  color: #000;
+  border-radius: 10px;
+  padding: 13px;
+  top: -30px;
+  right: 140px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: none;
 }
 
 #header .header-kanan .search-button::placeholder {
@@ -100,6 +112,9 @@ a.list:hover {
   height: 34px;
   top: -17.5px;
   right: 360px;
+  background: #ff6a3d;
+  padding: 6px;
+  border-radius: 30px;
 }
 /* HEADER END */
 
