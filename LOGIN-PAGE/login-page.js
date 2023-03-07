@@ -43,7 +43,8 @@ function latarRM() {
 
 // BUTTON MASUK FUNCTION
 function hrefMasuk() {
-  location.href = "/PAGE/Home Page/1. HTML/index.html";
+  location.href =
+    "https://dragonwild.github.io/webfilm.wr/HOME-PAGE/home-page.html";
 }
 
 // BUTTON TRANSITION TO CADANGAN FUNCTION
