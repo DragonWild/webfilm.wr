@@ -80,27 +80,27 @@ a.list:hover {
   height: 71px;
 }
 
-#header .search-button-active {
-  background-color: #ff6a3dd6;
-  color: #000;
-  border-radius: 10px;
-  padding: 13px;
-  top: -30px;
-  right: 140px;
-  font-size: 1.2rem;
-  text-align: center;
+.header-kanan span {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  top: 90px;
+  right: 360px;
+  background: #ff6a3d;
+  padding: 10px 10px;
+  border-radius: 35px;
 }
 
 #header .search-button {
   background-color: #ff6a3dd6;
   color: #000;
   border-radius: 10px;
-  padding: 13px;
-  top: -30px;
-  right: 140px;
+  padding: 10.5px;
+  bottom: 10px;
   font-size: 1.2rem;
   text-align: center;
-  display: none;
+  opacity: 0;
+  transition: 0.4s;
 }
 
 #header .header-kanan .search-button::placeholder {
@@ -108,13 +108,14 @@ a.list:hover {
 }
 
 #header .header-kanan .search-icon {
-  width: 34px;
-  height: 34px;
-  top: -17.5px;
-  right: 360px;
-  background: #ff6a3d;
-  padding: 6px;
-  border-radius: 30px;
+  width: 26px;
+  height: 26px;
+  right: 3.5px;
+  bottom: 44px;
+}
+
+#header span:hover .search-button {
+  opacity: 1;
 }
 /* HEADER END */
 
@@ -155,9 +156,49 @@ h1.toolbar {
   margin: 7px;
 }
 
-div.isi-sidebar {
+div.pil-sidebar {
   text-align: end;
 }
+
+/* ISI SIDEBAR */
+#isi-sidebar .active {
+  left: 920px;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#isi-sidebar span {
+  opacity: 0;
+}
+
+#isi-sidebar .active h1 {
+  font-size: 45px;
+  color: #ff6a3d;
+  margin-block: 30px;
+}
+
+#isi-sidebar .active a {
+  right: 20px;
+  font-size: 35px;
+  margin-inline: 25px;
+  font-weight: 700;
+}
+
+#isi-sidebar .active a.lg1 {
+  color: #ff6a3d;
+  background: #11726b;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+#isi-sidebar .active a.lg2 {
+  color: #1ba098;
+  background: #ff6a3d;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+/* ISI SIDEBAR END */
+
 /* SIDEBAR END */
 
 /* CONTENT */
@@ -191,125 +232,81 @@ div.isi-sidebar {
   border-radius: 5px;
 }
 
-#content .top-movies .poster-film {
-  position: absolute;
-  width: 1860px;
-  height: 460px;
+#content .top-movies .pembungkus-top-movies {
   left: 60px;
   top: 343px;
+  display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
+  height: 465px;
+  width: 100%;
+  cursor: pointer;
 }
 
-#content .top-movies .poster-film:hover > :not(:hover) {
-  opacity: 0.3;
-}
-
-.poster-film::-webkit-scrollbar {
+.pembungkus-top-movies::-webkit-scrollbar {
   width: 10px;
 }
 
-.poster-film::-webkit-scrollbar-thumb {
+.pembungkus-top-movies::-webkit-scrollbar-thumb {
   background-color: #1ba097;
   border-radius: 10px;
   transition: 0.2s;
 }
 
-.poster-film::-webkit-scrollbar-track {
+.pembungkus-top-movies::-webkit-scrollbar-track {
   background-color: #051622;
   border-radius: 10px;
 }
 
-.poster-film a {
-  font-size: 50px;
-  top: 30px;
-  color: #1ba097;
+.pembungkus-top-movies img {
+  transition: 0.4s;
+}
+
+.top-movies .pembungkus-top-movies span {
+  margin-right: 20px;
+}
+
+.top-movies .pembungkus-top-movies h1 {
+  font-size: 21.5px;
+  color: #1ba098;
+  margin: 20px 0;
+}
+
+.top-movies .pembungkus-top-movies a {
+  font-size: 25px;
+  color: #000;
+  background: #11726b;
+  padding: 5px 10px;
+  border-radius: 6.5px;
+  font-weight: 700;
+}
+
+.top-movies .pembungkus-top-movies a,
+.top-movies .pembungkus-top-movies h1 {
+  bottom: 128px;
+  left: 20px;
   opacity: 0;
+  transition: 0.4s;
 }
 
-/* .poster-film a:nth-child(1) {
-}
-.poster-film a:nth-child(2) {
-}
-.poster-film a:nth-child(3) {
-}
-.poster-film a:nth-child(4) {
-}
-.poster-film a:nth-child(5) {
-}
-.poster-film a:nth-child(6) {
-}
-.poster-film a:nth-child(7) {
-}
-.poster-film a:nth-child(8) {
-}
-.poster-film a:nth-child(9) {
-}
-.poster-film a:nth-child(10) {
-} */
-
-.top-movies .the-batman {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 0px;
+.pembungkus-top-movies:hover > :not(:hover) img {
+  opacity: 0.3;
 }
 
-.top-movies .top-gun {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 326px;
+.pembungkus-top-movies:hover > :not(:hover) h1,
+.pembungkus-top-movies:hover > :not(:hover) a {
+  opacity: 0;
+  transition: 0.4s;
 }
 
-.top-movies .avatar-2 {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 652px;
+.pembungkus-top-movies:hover a,
+.pembungkus-top-movies:hover h1 {
+  opacity: 1;
 }
 
-.top-movies .ambulance {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 989px;
-}
-
-.top-movies .pengabdi-setan-2 {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 1315px;
-}
-.top-movies .black-panther-2 {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 1641px;
-}
-.top-movies .interstellar {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 1969px;
-}
-.top-movies .inception {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 2289px;
-}
-.top-movies .joker {
-  position: absolute;
-  top: 0px;
-  transition: 0.5s;
-  left: 2610px;
-}
-.top-movies .the-dark-knight {
-  position: absolute;
-  top: 0px;
-  transition: 2s;
-  left: 2930px;
+/* TOP GENRE */
+.top-genre {
+  top: 10px;
 }
 
 .top-genre .judul {
@@ -368,7 +365,7 @@ span.genre {
 }
 .watermark {
   font-size: 15px;
-  left: 75px;
+  left: 80px;
   bottom: 7px;
 }
 /* FOOTER END */

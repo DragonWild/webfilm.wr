@@ -1,0 +1,374 @@
+* {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+a.latar-awal {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: #178b84;
+}
+
+span.isi-utama {
+  width: 600px;
+  left: -20px;
+}
+
+span.isi-utama a:nth-child(1) {
+  position: absolute;
+  text-align: center;
+  width: 2000px;
+  top: 260px;
+  font-size: 55px;
+  font-weight: 700;
+  color: #bff5ef;
+  text-shadow: 0px 4px 70px #000000;
+}
+
+span.isi-utama a:nth-child(2) {
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000ad;
+  top: 385px;
+  width: 2000px;
+}
+
+span.isi-utama img {
+  position: absolute;
+  align-items: center;
+  top: 400px;
+  width: 2000px;
+  height: 370px;
+}
+
+span.isi-utama a:nth-child(3) {
+  position: absolute;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  width: 2000px;
+  text-align: center;
+  top: 700px;
+}
+
+/* LOGIN PAGE */
+
+div.header-login {
+  background: #178b84;
+  border-radius: 0 0 45px 45px;
+}
+
+.header-login img {
+  left: 60px;
+  top: 7px;
+}
+
+div.content-login {
+  background-image: url(/COMPONENT/Latar\ Login\ Page/latar-login-page.svg);
+  width: 100%;
+  height: 1080px;
+  top: 1080px;
+}
+
+/* TERDAFTAR */
+
+section.terdaftar {
+  position: absolute;
+  display: flex;
+  background: #094440;
+  padding: 30px;
+  top: 300px;
+  left: 320px;
+  flex-direction: column;
+  border-radius: 30px 0 0 30px;
+  transition: 0.3s;
+}
+
+.login-judul {
+  color: #ffffffda;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input::placeholder {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  left: 45px;
+  text-align: left;
+}
+
+.terdaftar .username,
+.terdaftar .password-user {
+  padding: 15px 45px 15px 47.2px;
+  border-radius: 15px;
+  width: 470px;
+}
+
+.terdaftar .user-icon,
+.terdaftar .password-icon {
+  bottom: 34px;
+  left: 14px;
+}
+
+.terdaftar #iconCP {
+  top: -58px;
+  left: 520px;
+  opacity: 0.5;
+  font-size: 24px;
+}
+
+.terdaftar section.checkbox-latar input {
+  visibility: hidden;
+}
+
+.terdaftar section.checkbox-latar {
+  width: 42px;
+  height: 20px;
+  border-radius: 30px;
+  background: #026d66;
+}
+
+.terdaftar section.checkbox-latar label {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -17.2px;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.terdaftar section.checkbox-latar input:checked + label {
+  left: 21px;
+  background-color: #1ca89f;
+}
+
+.terdaftar .checkbox-text {
+  top: -20px;
+  left: 55px;
+  color: antiquewhite;
+}
+
+.terdaftar #masuk-button {
+  font-size: 25px;
+  text-align: center;
+  color: antiquewhite;
+  background-color: #178b84;
+  padding: 10px;
+  margin: 10px 145px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.terdaftar #masuk-button:hover {
+  background-color: #026d66;
+}
+
+/* MENDAFTAR */
+section#mendaftar {
+  position: absolute;
+  top: 300px;
+  flex-direction: column;
+  text-align: center;
+  left: 940px;
+  background: #dddddd;
+  width: 622px;
+  height: 390px;
+  border-radius: 0 30px 30px 0;
+  transition: 0.3s;
+}
+
+#mendaftar h1 {
+  font-size: 40px;
+  text-align: center;
+  top: 55px;
+  color: #ff6a3d;
+}
+
+#mendaftar a {
+  font-weight: 400;
+  top: 65px;
+  text-align: center;
+  color: #000000;
+}
+
+#mendaftar button {
+  font-weight: 700;
+  top: 240px;
+  padding: 15px 100px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #ff6a3d;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#mendaftar button:hover {
+  background-color: #ff4b14;
+}
+
+/* CONTENT LOGIN CADANGAN */
+
+/* TERDAFTAR CADANGAN */
+
+section#terdaftar-cadangan {
+  position: absolute;
+  top: 300px;
+  flex-direction: column;
+  text-align: center;
+  left: 320px;
+  background: #dddddd;
+  width: 622px;
+  height: 390px;
+  border-radius: 30px 0px 0px 30px;
+  transition: 0.3s;
+}
+
+#terdaftar-cadangan h1 {
+  font-size: 40px;
+  text-align: center;
+  top: 55px;
+  color: #ff6a3d;
+}
+
+#terdaftar-cadangan a {
+  font-weight: 400;
+  top: 65px;
+  text-align: center;
+  color: #000000;
+}
+
+#terdaftar-cadangan button {
+  font-weight: 700;
+  top: 240px;
+  padding: 15px 100px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #ff6a3d;
+  cursor: pointer;
+}
+
+#terdaftar-cadangan button:hover {
+  background-color: #ff4b14;
+}
+
+/* MENDAFTAR CADANGAN */
+
+section#mendaftar-cadangan {
+  position: absolute;
+  display: flex;
+  background: #094440;
+  padding: 30px;
+  top: 300px;
+  left: 940px;
+  flex-direction: column;
+  border-radius: 0px 30px 30px 0px;
+  transition: 0.3s;
+}
+
+#mendaftar-cadangan .login-judul {
+  color: #ffffffda;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#mendaftar-cadangan input::placeholder {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  left: 45px;
+  text-align: left;
+}
+
+#mendaftar-cadangan .username,
+#mendaftar-cadangan .email-user,
+#mendaftar-cadangan #password-user-cadangan {
+  padding: 15px 45px 15px 47.2px;
+  border-radius: 15px;
+  width: 470px;
+}
+
+#mendaftar-cadangan .user-icon,
+#mendaftar-cadangan #email-icon,
+#mendaftar-cadangan #password-icon {
+  bottom: 34px;
+  left: 14px;
+  font-size: 22px;
+}
+
+#mendaftar-cadangan #iconCPCadangan {
+  top: -58px;
+  left: 520px;
+  opacity: 0.5;
+  font-size: 24px;
+}
+
+#mendaftar-cadangan section.checkbox-latar input {
+  visibility: hidden;
+}
+
+#mendaftar-cadangan section.checkbox-latar {
+  width: 42px;
+  height: 20px;
+  border-radius: 30px;
+  background: #026d66;
+}
+
+#mendaftar-cadangan section.checkbox-latar label {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -17.2px;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#mendaftar-cadangan section.checkbox-latar input:checked + label {
+  left: 21px;
+  background-color: #1ca89f;
+}
+
+#mendaftar-cadangan .checkbox-text {
+  top: -20px;
+  left: 55px;
+  color: antiquewhite;
+}
+
+#mendaftar-cadangan #daftar-button {
+  font-size: 25px;
+  text-align: center;
+  color: antiquewhite;
+  background-color: #178b84;
+  padding: 10px;
+  margin: -4px 145px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#mendaftar-cadangan #daftar-button:hover {
+  background-color: #026d66;
+}

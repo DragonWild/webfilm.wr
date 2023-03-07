@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE WEB -->
+    <title>WEB FILM</title>
+    <!-- LOGO WEB -->
+    <link rel="icon" href="/COMPONENT/Logo Utama/Logo Wira.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- FEATHER ICON -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- CSS WEB -->
+    <link rel="stylesheet" href="/PAGE/Login Page/2. CSS/style.css" />
+  </head>
+  <body>
+    <!-- BEFORE LOGIN -->
+    <a href="#content-login" class="latar-awal"></a>
+    <span class="isi-utama">
+      <a href="#content-login"
+        >WELCOME BACK <br />
+        MOVIE HUNTER</a
+      >
+      <a href="#content-login">press anything</a>
+      <a href="#content-login">created by Wiraa</a>
+      <a href="#content-login">
+        <img src="/COMPONENT/Logo Utama/Logo Wira.svg" class="logo-inti-awal" />
+      </a>
+    </span>
+    <!-- BEFORE LOGIN END -->
+    <!-- LOGIN -->
+    <div id="content-login" class="content-login">
+      <section class="terdaftar">
+        <h1 class="login-judul">Login</h1>
+        <input type="text" class="username" placeholder="username or email" />
+        <i class="user-icon" data-feather="user"></i>
+        <input
+          type="password"
+          class="password-user"
+          placeholder="password"
+          id="passwordUser"
+        />
+        <i class="password-icon" data-feather="lock"></i>
+        <i class="fa fa-eye" id="iconCP" onclick="clickPassword()"></i>
+        <section class="checkbox-latar" id="checkboxRMLatar">
+          <a class="latar-checkbox"></a>
+          <input type="checkbox" id="dataCheckboxUtama" />
+          <label
+            for="dataCheckboxUtama"
+            id="inputRM"
+            onclick="latarRM(this)"
+          ></label>
+        </section>
+        <a class="checkbox-text">remember me</a>
+        <button type="submit" id="masuk-button" onclick="hrefMasuk(this)">
+          masuk
+        </button>
+      </section>
+      <section id="mendaftar">
+        <button type="submit" onclick="transitionCadangan(this)">daftar</button>
+        <h1>
+          Belum punya <br />
+          akun??
+        </h1>
+        <a>buat akun lah masbro!!</a>
+      </section>
+    </div>
+    <div id="contentLoginCadangan">
+      <section id="terdaftar-cadangan">
+        <button type="submit" onclick="transitionCadangan(this)">masuk</button>
+        <h1>
+          Sudah punya <br />
+          akun??
+        </h1>
+        <a>ya ngapain disini lah masbro!!</a>
+      </section>
+      <section id="mendaftar-cadangan">
+        <h1 class="login-judul">Sign Up</h1>
+        <input type="text" class="username" placeholder="fullname" />
+        <i class="user-icon" data-feather="user"></i>
+
+        <input type="text" class="email-user" placeholder="email" />
+        <i class="fa fa-envelope-o" id="email-icon"></i>
+        <input
+          type="password"
+          id="password-user-cadangan"
+          placeholder="password"
+        />
+        <i id="password-icon" data-feather="lock"></i>
+        <i
+          class="fa fa-eye"
+          id="iconCPCadangan"
+          onclick="clickPasswordCadangan()"
+        ></i>
+        <button type="submit" id="daftar-button" onclick="hrefMasuk(this)">
+          daftar
+        </button>
+      </section>
+    </div>
+
+    <div class="header-login">
+      <img src="/COMPONENT/Logo Utama/Logo Wira.svg" class="logo-inti" />
+    </div>
+    <!-- LOGIN END -->
+    <!-- JAVASCRIPT -->
+    <script src="/PAGE/Login Page/3. JAVASCRIPT/script.js"></script>
+    <!-- JAVASCRIPT END -->
+  </body>
+</html>
